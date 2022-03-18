@@ -1,0 +1,38 @@
+{
+    "name": "The-Baymax",
+    "description": "A Modular telegram song bot.",
+    "repository": "https://github.com/ImAroshaKovida/The-Baymax",
+    "keywords": [
+       
+        "telegram bot",
+        "pyrogram"
+
+    ],
+    "env": {
+        "APP_ID": {
+            "description": "Get this value from my.telegram.org",
+            "value": ""
+        },
+        "API_HASH": {
+            "description": "Get this value from my.telegram.org",
+            "value": ""
+        },
+        "OWNER": {
+            "description": "Your username without @.",
+            "value": "Aro_Ediz"
+        },
+     
+        "BOT_TOKEN": {
+            "description": "ID of the message to edit.",
+            "value": ""
+        }
+    },
+    "buildpacks": [
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "heroku/python"
+        }
+    ]
+}
