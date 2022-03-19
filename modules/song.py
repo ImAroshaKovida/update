@@ -42,7 +42,7 @@ async def start(client, message):
     )
 
 
-@Client.on_message(filters.command(['song']))
+@Client.on_message(filters.command(['aro']))
 def a(client, message):
     query = ''
     for i in message.command[1:]:
@@ -72,7 +72,7 @@ def a(client, message):
             #     m.edit("Exceeded 30mins cap")
             #     return
 
-            performer = f"[From Aro_Ediz]" 
+            performer = f"[From ᴀʀᴏ|ᴇᴅɪᴢ]" 
             thumb_name = f'thumb{message.message_id}.jpg'
             thumb = requests.get(thumbnail, allow_redirects=True)
             open(thumb_name, 'wb').write(thumb.content)
@@ -83,7 +83,7 @@ def a(client, message):
             return
     except Exception as e:
         m.edit(
-            "**Enter Song Name with /song Command!**"
+            "**Enter Song Name with /aro Command!**"
         )
         print(str(e))
         return
@@ -93,7 +93,7 @@ def a(client, message):
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = f'▣ <b>Title       --></b> <a href="{link}">{title}</a>\n▣ <b>Duration    --></b> <code>{duration}</code>\n▣ <b>Uploaded By --></b> <a href="https://t.me/thebot_from_Aro_ediz">The Baymax( Aro_Ediz )</a>\n⠀\n⠀\n("`ᴀʀᴏ ı ᴇᴅɪᴢ © ᴘᴜʙʟɪᴄ ᴇᴅɪᴛɪᴏɴ`")'
+        rep = f'▣ <b>Title⠀⠀⠀⠀⠀⠀⠀---></b> <a href="{link}">{title}</a>\n▣ <b>Duration⠀⠀⠀⠀---></b> <code>{duration}</code>\n▣ <b>Uploaded By⠀---></b> <a href="https://t.me/thebot_from_Aro_ediz">The Baymax( Aro_Ediz )</a>\n⠀\n⠀\nᴀʀᴏ|ᴇᴅɪᴢ • ᴘᴜʙʟɪᴄ ᴇᴅɪᴛɪᴏɴ'
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
