@@ -7,7 +7,7 @@ class Config:
     API_HASH = os.environ.get("API_HASH", "")
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
     START_MSG = os.environ.get("START_MSG", "<b>Hello there, I'm Baymax\nI'm a Simple Yet Powerful Mp3 Downloader Bot.Made by [Arosha_Kovida](t.me/Aro_Ediz)  Hit the help button to visit our support group. </b>\n\nJust send me Any Songs name with /song command")
-    START_IMG = os.environ.get("START_IMG", "https://chpic.su/_data/stickers/k/Kakashibysps/Kakashibysps_030.webp")
+    START_IMG = os.environ.get("START_IMG", "https://telegra.ph/file/f82649a7e3c951a81006a.png")
     OWNER = os.environ.get("OWNER", "ImAroshaKovida") 
     DOWNLOAD_LOCATION = os.environ.get("DOWNLOAD_LOCATION", "./DOWNLOADS/")
     msg = {}
