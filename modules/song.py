@@ -37,6 +37,8 @@ async def start(client, message):
                     InlineKeyboardButton(He, url=B4)
                  ]
           ]
+             
+             STICKER = "CAACAgUAAxkBAAEEwKthkPVBp6d5T4S3dlYZM3L8BkXRNAACOAQAAryviVQbCLI09PvjAAEiBA"
         ),
         reply_to_message_id=message.message_id
     )
