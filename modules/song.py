@@ -37,7 +37,6 @@ async def start(client, message):
                     InlineKeyboardButton(He, url=B4)
                  ]
           ]
-            
         ),
         reply_to_message_id=message.message_id
     )
