@@ -18,7 +18,7 @@ B3="t.me/thebaymax_from_bot?startgroup=true"
 B4="t.me/Aro_Ediz"
 BUTTON1="📃 Source Code "
 He="⚙ Creater "
-He1="/help"
+
 
 def time_to_seconds(time):
     stringt = str(time)
@@ -36,8 +36,6 @@ async def start(client, message):
                     InlineKeyboardButton(ABS, url=B3)
             ],[
                     InlineKeyboardButton(He, url=B4)
-                 ],[
-                    InlineKeyboardButton(He1)
                  ]
           ]
         ),
