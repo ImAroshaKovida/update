@@ -15,7 +15,7 @@ OWNER=" Help"
 GITCLONE="github.com/ImAroshaKovida/The-Baymax"
 B2="t.me/thebot_from_Aro_ediz"
 B3="t.me/thebaymax_from_bot?startgroup=true"
-B4="t.me/Aro_Ediz"
+B4="/help"
 BUTTON1="📃 Source Code "
 He="⚙ Creater "
 
